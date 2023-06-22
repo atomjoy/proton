@@ -1,6 +1,6 @@
-# Proton email template
+# Proton html email template
 
-Laravel proton email template blade components.
+Laravel proton html email template blade components.
 
 ## Create email class
 
@@ -80,4 +80,4 @@ Route::get('/proton', function () {
 
 ## Email image
 
-<img src="proton-email.jpg" width="100%">
+[proton-email.jpg](https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png)
