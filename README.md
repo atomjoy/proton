@@ -78,6 +78,6 @@ Route::get('/proton', function () {
 });
 ```
 
-## Sample image (thunderbird)
+## Email image
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png" width="100%">
