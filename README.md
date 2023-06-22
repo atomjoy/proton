@@ -80,4 +80,4 @@ Route::get('/proton', function () {
 
 ## Email image
 
-[proton-email.jpg](https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png)
+<img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png" width="100%">
