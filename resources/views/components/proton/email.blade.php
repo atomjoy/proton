@@ -61,15 +61,13 @@
 			box-sizing: border-box;
 		}
 
-		.proton-table tr:first-child td {
-			padding: 40px;
+		.proton-margin {
+			float: left;
+			width: 100%;
+			overflow: hidden;
+			height: 40px;
 			padding-bottom: 0px;
 			box-sizing: border-box;
-		}
-
-		.proton-table tr:last-child td {
-			padding: 40px;
-			padding-top: 0px;
 		}
 
 		.proton-div {
@@ -129,6 +127,13 @@
 			color: #ff00ff;
 		}
 
+		.proton-table a.proton-link {
+			display: inline-block;
+			width: auto !important;
+			outline: none !important;
+			text-decoration: none !important;
+		}
+
 		.proton-table img,
 		.proton-table a img {
 			display: block;
@@ -174,9 +179,7 @@
 		.proton-flex {
 			float: left;
 			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			text-align: center;
 		}
 
 		.proton-divider {
