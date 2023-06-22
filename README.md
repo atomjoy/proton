@@ -2,6 +2,20 @@
 
 Laravel proton html email template blade components.
 
+## Install package
+
+```sh
+composer create-project laravel/laravel:^10.0 email-app
+cd email-app
+composer require atomjoy/proton
+```
+
+### Overwrite files
+
+```sh
+php artisan vendor:publish --tag=proton-email --force
+```
+
 ## Create email class
 
 ```sh

@@ -1,0 +1,30 @@
+{
+	"name": "atomjoy/proton",
+	"description": "Proton html email for Laravel.",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Atomjoy",
+			"email": "atomjoy.official@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {},
+	"autoload": {
+		"classmap": [
+			"src/"
+		],
+		"psr-4": {
+			"Proton\\": "src/"
+		},
+		"files": []
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Proton\\ProtonServiceProvider"
+			]
+		}
+	}
+}
