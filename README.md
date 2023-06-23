@@ -27,7 +27,7 @@ Route::get('/proton', function () {
   Mail::to('user@laravel.com')->send(new ProtonPasswordMail('XXX-123'));
   
   // User activation link (User model requires columns: id, name, code), use User or null for example
-  Mail::to('user@laravel.com')->send(new ProtonRegisterMail(null);
+  Mail::to('user@laravel.com')->send(new ProtonRegisterMail(null));
 
   // Show example email
   return view('proton.email'); // .password | .register
