@@ -16,80 +16,30 @@ composer require atomjoy/proton
 php artisan vendor:publish --tag=proton-email --force
 ```
 
-## Create email class
-
-```sh
-php artisan make:mail ProtonMail
-```
-
-### ProtonMail class
-
-```php
-<?php
-
-namespace App\Mail;
-
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
-
-class ProtonMail extends Mailable
-{
- use Queueable, SerializesModels;
-
- /**
-  * Create a new message instance.
-  */
- public function __construct()
- {
-  //
- }
-
- /**
-  * Get the message envelope.
-  */
- public function envelope(): Envelope
- {
-  return new Envelope(
-   subject: '🙂 Welcome!',
-  );
- }
-
- /**
-  * Get the message content definition.
-  */
- public function content(): Content
- {
-  return new Content(
-   view: 'proton.email',
-  );
- }
-
- /**
-  * Get the attachments for the message.
-  *
-  * @return array<int, \Illuminate\Mail\Mailables\Attachment>
-  */
- public function attachments(): array
- {
-  return [];
- }
-}
-```
-
-### Send email
+## Send email examples
 
 ```php
 Route::get('/proton', function () {
-  // Send email
+  // Send email sample
   Mail::to('user@laravel.com')->send(new ProtonMail());
+  
+  // User reset password
+  Mail::to('user@laravel.com')->send(new ProtonPasswordMail('XXX-123'));
+  
+  // User activation link (User model requires columns: id, code), use User or null for example
+  Mail::to('user@laravel.com')->send(new ProtonRegisterMail(null);
 
-  // Show email
-  return view('proton.email');
+  // Show example email
+  return view('proton.email'); // .password | .register
 });
+```
+
+## Create custom email class
+
+```sh
+php artisan make:mail PromotionMail
+
+# Then copy proton.email view to your email view for example: proton.promotion and change details
 ```
 
 ## Email image
