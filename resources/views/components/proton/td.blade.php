@@ -7,6 +7,6 @@
 	</x-proton.td>
 </x-proton.tr>
 --}}
-<td class="proton-td" colspan="{{ $colspan ?? 10}}">
+<td class="proton-td {{ $class ?? '' }}" colspan="{{ $colspan ?? 10}}" style="{{ $style ?? '' }}">
 	{{ $slot }}
 </td>

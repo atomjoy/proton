@@ -57,12 +57,12 @@
 	</x-proton.tr>
 
 	<x-proton.tr>
-		<x-proton.td colspan="">
+		<x-proton.td colspan="" style="padding-right: 10px;">
 			<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus. Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium repudiandae!</p>
 		</x-proton.td>
 
-		<x-proton.td colspan="">
+		<x-proton.td colspan="" style="padding-left: 10px;">
 			<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus. Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium repudiandae!</p>
 		</x-proton.td>
