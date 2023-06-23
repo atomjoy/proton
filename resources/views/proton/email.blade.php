@@ -70,6 +70,50 @@
 
 	<x-proton.tr>
 		<x-proton.td>
+			<h2> Gallery </h2>
+		</x-proton.td>
+	</x-proton.tr>
+
+	<x-proton.row2>
+		<x-slot:slot1>
+			<a href="https://proton.me" class="proton-link">
+				<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
+			</a>
+		</x-slot:slot1>
+		<x-slot:slot2>
+			<a href="https://proton.me" class="proton-link">
+				<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
+			</a>
+		</x-slot:slot2>
+	</x-proton.row2>
+
+	<x-proton.tr>
+		<x-proton.td>
+			<h2> Links </h2>
+		</x-proton.td>
+	</x-proton.tr>
+
+	<x-proton.row3>
+		<x-slot:slot1>
+			<a href="https://proton.me" class="proton-link">
+				<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
+			</a>
+		</x-slot:slot1>
+		<x-slot:slot2>
+			<a href="https://proton.me" class="proton-link">
+				<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
+			</a>
+		</x-slot:slot2>
+		<x-slot:slot3>
+			<a href="https://proton.me" class="proton-link">
+				<img src="https://media.cybernews.com/images/featured/2020/09/protonmail-review-1.jpg" alt="Image">
+			</a>
+		</x-slot:slot3>
+	</x-proton.row3>
+
+	<x-proton.tr>
+		<x-proton.td>
+			<br />
 			<h3> Regards </h3>
 			<p>Alex, <br /> Have a nice day!</p>
 		</x-proton.td>
