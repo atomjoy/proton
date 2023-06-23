@@ -15,7 +15,7 @@
 	<x-proton.td colspan="2" style="padding-right: 5px;  width: 33%;">
 		{{ $slot1 }}
 	</x-proton.td>
-	<x-proton.td colspan="2" style="padding-left: 5px; padding-right: 5px;  width: 34%;">
+	<x-proton.td colspan="2" style="padding-left: 5px; padding-right: 5px;  width: 28%;">
 		{{ $slot2 }}
 	</x-proton.td>
 	<x-proton.td colspan="2" style="padding-left: 5px;  width: 33%;">
