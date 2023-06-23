@@ -12,13 +12,13 @@
 </x-proton.row3>
 --}}
 <x-proton.tr>
-	<x-proton.td colspan="2" style="padding-right: 5px;">
+	<x-proton.td colspan="2" style="padding-right: 5px;  width: 33%;">
 		{{ $slot1 }}
 	</x-proton.td>
-	<x-proton.td colspan="2" style="padding-left: 5px; padding-right: 5px;">
+	<x-proton.td colspan="2" style="padding-left: 5px; padding-right: 5px;  width: 34%;">
 		{{ $slot2 }}
 	</x-proton.td>
-	<x-proton.td colspan="2" style="padding-left: 5px;">
+	<x-proton.td colspan="2" style="padding-left: 5px;  width: 33%;">
 		{{ $slot3 }}
 	</x-proton.td>
 </x-proton.tr>
