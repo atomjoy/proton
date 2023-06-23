@@ -1,4 +1,4 @@
-<x-proton.email title="{{ __('Activation') }}" locale="pl">
+<x-proton.email title="{{ __('Password') }}" locale="pl">
 	<x-slot:style>
 		<style>
 			.proton-flex img {

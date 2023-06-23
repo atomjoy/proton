@@ -9,10 +9,10 @@
 </x-proton.row2>
 --}}
 <x-proton.tr>
-	<x-proton.td colspan="">
+	<x-proton.td colspan="" style="padding-right: 10px;">
 		{{ $slot1 }}
 	</x-proton.td>
-	<x-proton.td colspan="">
+	<x-proton.td colspan="" style="padding-left: 10px;">
 		{{ $slot2 }}
 	</x-proton.td>
 </x-proton.tr>
