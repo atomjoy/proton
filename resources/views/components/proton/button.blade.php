@@ -8,5 +8,5 @@
 </x-proton.tr>
 --}}
 <center>
-	<a href="{{ $url ?? 'http://localhost/welcome'}}" class="proton-button">{{ $slot }}</a>
+	<a href="{{ $url ?? request()->getSchemeAndHttpHost() }}" class="proton-button" target="_blank">{{ $slot }}</a>
 </center>
