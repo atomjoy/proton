@@ -42,6 +42,14 @@ php artisan make:mail PromotionMail
 # Then copy proton.email view to your email view for example: proton.promotion and change details
 ```
 
+## Embed image in blade
+
+```blade
+@if (file_exists(public_path() . '/vendor/webi/logo/logo.png'))
+  <img class="email-logo" src="{{ $message->embed(public_path() . '/vendor/webi/logo/logo.png') }}" />
+@endif
+```
+
 ## Email image
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png" width="100%">
