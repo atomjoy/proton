@@ -50,6 +50,11 @@ php artisan make:mail PromotionMail
 @endif
 ```
 
-## Email image
+
+## Html email signature image
+
+<img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-signature.png" width="100%">
+
+## Html email image
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png" width="100%">
