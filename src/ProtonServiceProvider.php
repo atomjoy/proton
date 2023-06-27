@@ -23,14 +23,18 @@ class ProtonServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		// Email views
-		// $this->loadViewsFrom(__DIR__ . '/../resources/views', 'proton');
+		$this->loadViewsFrom(__DIR__ . '/../resources/views', 'proton');
 
 		// Publish
 		if ($this->app->runningInConsole()) {
+			// Sample Mail class
 			$this->publishes([
 				__DIR__ . '/../app' => base_path('app'),
-				__DIR__ . '/../resources/views' => resource_path('views')
-			], 'proton-email');
+			], 'proton-mail');
+			// Edit proton view
+			$this->publishes([
+				__DIR__ . '/../resources/views' => resource_path('views/vendor/proton')
+			], 'proton-views');
 		}
 	}
 }
