@@ -37,7 +37,7 @@ class ProtonMail extends Mailable
 	public function content(): Content
 	{
 		return new Content(
-			view: 'proton.email',
+			view: 'proton::email.default',
 		);
 	}
 

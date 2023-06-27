@@ -38,7 +38,7 @@ class ProtonRegisterMail extends Mailable
 	public function content(): Content
 	{
 		return new Content(
-			view: 'proton.register',
+			view: 'proton::email.register',
 		);
 	}
 

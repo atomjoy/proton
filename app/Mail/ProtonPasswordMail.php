@@ -39,7 +39,7 @@ class ProtonPasswordMail extends Mailable
 	public function content(): Content
 	{
 		return new Content(
-			view: 'proton.password',
+			view: 'proton::email.password',
 		);
 	}
 
