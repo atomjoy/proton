@@ -10,13 +10,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
 	<style>
-		.proton-body {
+		.si-body {
 			display: block;
 			padding: 0px;
 			margin: 0px;
 		}
 
-		.proton-wrapper {
+		.si-wrapper {
 			width: 100%;
 			display: block;
 			overflow: hidden;
@@ -28,16 +28,14 @@
 			font-family: 'Baloo 2', 'Open Sans', 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Tahoma, Arial, monospace, sans-serif;
 		}
 
-		.proton-table a.proton-link {
+		.si-table a.proton-link {
 			display: inline-block;
 			width: auto !important;
 			outline: none !important;
 			text-decoration: none !important;
 		}
-	</style>
 
-	<style>
-		.si-wrapper {
+		.si-border {
 			width: 640px;
 			margin: 50px auto;
 			border: 1px solid #191715;
@@ -45,24 +43,21 @@
 			overflow: hidden;
 		}
 
-		table {
+		.si-table {
 			border-collapse: collapse;
 			border-spacing: 0px;
 			border: 0px;
 			width: 640px;
 			margin: 0px auto;
 			background-color: #F1EBE4;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			border-top-width: 3px;
 		}
 
-		td,
-		th {
+		.si-table td,
+		.si-table th {
 			padding: 10px 20px;
 			border-bottom: 1px solid #191715;
-		}
-
-		table {
-			border-top-width: 3px;
 		}
 
 		.si-foto {
@@ -126,10 +121,10 @@
 	</style>
 </head>
 
-<body class="proton-body">
-	<div class="proton-wrapper">
-		<div class="si-wrapper">
-			<table>
+<body class="si-body">
+	<div class="si-wrapper">
+		<div class="si-border">
+			<table class="si-table">
 				<tbody>
 					<tr>
 						<td class="si-company" colspan="2">

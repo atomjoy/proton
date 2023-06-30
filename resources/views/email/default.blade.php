@@ -6,6 +6,10 @@
 				max-width: 15%;
 				width: 40px;
 			}
+
+			.proton-table tr td {
+				padding: 0px 40px;
+			}
 		</style>
 	</x-slot:style>
 

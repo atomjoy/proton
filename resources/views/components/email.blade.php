@@ -57,7 +57,6 @@
 		}
 
 		.proton-table tr td {
-			padding: 0px 40px;
 			box-sizing: border-box;
 		}
 
