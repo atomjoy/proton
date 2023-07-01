@@ -42,6 +42,9 @@ Route::get('/proton', function () {
 # Edit package email views in resources/views/vendor/proton
 php artisan vendor:publish --tag=proton-views --force
 
+# Create config file edit template messages (optional)
+php artisan vendor:publish --tag=proton-config --force
+
 # Copy images (optional)
 php artisan vendor:publish --tag=proton-mail --force
 ```

@@ -29,6 +29,10 @@ class ProtonServiceProvider extends ServiceProvider
 
 		// Publish
 		if ($this->app->runningInConsole()) {
+			// Config
+			$this->publishes([
+				__DIR__ . '/../config/config.php' => config_path('proton.php'),
+			], 'proton-config');
 			// Copy images
 			$this->publishes([
 				__DIR__ . '/../public' => public_path('vendor/proton'),
