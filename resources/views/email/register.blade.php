@@ -46,19 +46,19 @@
 			<br />
 
 			<x-proton::flex>
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/facebook.png" alt="Image">
 				</a>
 
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/twitter.png" alt="Image">
 				</a>
 
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/instagram.png" alt="Image">
 				</a>
 
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/tiktok.png" alt="Image">
 				</a>
 			</x-proton::flex>

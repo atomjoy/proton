@@ -73,12 +73,12 @@
 
 	<x-proton::row2>
 		<x-slot:slot1>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot1>
 		<x-slot:slot2>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot2>
@@ -86,12 +86,12 @@
 
 	<x-proton::row2>
 		<x-slot:slot1>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot1>
 		<x-slot:slot2>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot2>
@@ -105,17 +105,17 @@
 
 	<x-proton::row3>
 		<x-slot:slot1>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot1>
 		<x-slot:slot2>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot2>
 		<x-slot:slot3>
-			<a href="" class="proton-link">
+			<a href="" class="proton-link" target="_blank">
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			</a>
 		</x-slot:slot3>
@@ -140,19 +140,19 @@
 			<br />
 
 			<x-proton::flex>
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/facebook.png" alt="Image">
 				</a>
 
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/twitter.png" alt="Image">
 				</a>
 
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/instagram.png" alt="Image">
 				</a>
 
-				<a href="" class="proton-link proton-social-link">
+				<a href="" class="proton-link proton-social-link" target="_blank">
 					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/tiktok.png" alt="Image">
 				</a>
 			</x-proton::flex>
