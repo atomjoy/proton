@@ -42,11 +42,14 @@ Route::get('/proton', function () {
 # Edit package email views in resources/views/vendor/proton
 php artisan vendor:publish --tag=proton-views --force
 
-# Create config file edit template messages (optional)
-php artisan vendor:publish --tag=proton-config --force
+# Edit translations (optional)
+php artisan vendor:publish --tag=proton-lang --force
 
 # Copy images (optional)
 php artisan vendor:publish --tag=proton-mail --force
+
+# Create config file (optional)
+php artisan vendor:publish --tag=proton-config --force
 ```
 
 ## Create Laravel mail class
