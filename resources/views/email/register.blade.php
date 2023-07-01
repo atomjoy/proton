@@ -1,4 +1,4 @@
-<x-proton::email title="{{ __('Activation') }}" locale="pl">
+<x-proton::email title="{{ __('proton.password.title') }}" locale="{{ app()->getlocale() }}">
 	<x-slot:style>
 		<style>
 			.proton-table tr td {
@@ -15,23 +15,24 @@
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-register.png" alt="Image">
 			</center>
 
-			<h2> @lang(config('proton.welcome.register', 'Welcome')) {{ $user?->name ?? 'User' }}! </h2>
-			<p>@lang(config('proton.activation_text', 'This activation e-mail is sent to the e-mail address that you registered on our site. To activate your account, please click on the link below.'))</p>
+			<h2>@lang('proton.register.welcome') {{ $user?->name ?? 'User' }}!</h2>
+			<p>@lang('proton.register.message')</p>
 		</x-proton::td>
 	</x-proton::tr>
 
 	<x-proton::tr>
 		<x-proton::td>
 			<x-proton::button url="{{ request()->getSchemeAndHttpHost() }}/activate/{{ $user?->id ?? '0' }}/{{ $user?->code ?? 'nocode' }}?locale={{ app()->getLocale() }}">
-				@lang(config('proton.button.confirm_email', 'Confirm Email'))
+				@lang('proton.register.button')
 			</x-proton::button>
 		</x-proton::td>
 	</x-proton::tr>
 
 	<x-proton::tr>
 		<x-proton::td>
-			<h3> @lang(config('proton.regards_title', 'Regards')) </h3>
-			<p> @lang(config('proton.regards_text', 'Have a nice day!'))</p>
+			<h3>@lang('proton.register.regards_title')</h3>
+			<strong>{{ $user?->name ?? '' }}</strong>
+			<p>@lang('proton.register.regards_text')</p>
 		</x-proton::td>
 	</x-proton::tr>
 
@@ -40,7 +41,7 @@
 			<x-proton::divider />
 
 			<center>
-				<span class="proton-rights"> © @lang(config('proton.rights', '2023 Proton Email')) </span>
+				<span class="proton-rights"> © @lang('proton.rights') </span>
 			</center>
 
 			<br />

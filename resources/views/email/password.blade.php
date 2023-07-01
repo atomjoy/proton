@@ -1,4 +1,4 @@
-<x-proton::email title="{{ __('Password') }}" locale="pl">
+<x-proton::email title="{{ __('proton.password.title') }}" locale="{{ app()->getlocale() }}">
 	<x-slot:style>
 		<style>
 			.proton-table tr td {
@@ -15,8 +15,8 @@
 				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-password.png" alt="Image">
 			</center>
 
-			<h2> @lang(config('proton.welcome.password', 'Welcome again')) {{ $user?->name ?? 'User' }}! </h2>
-			<p>@lang(config('proton.password_text', 'This is your new password.'))</p>
+			<h2>@lang('proton.password.welcome') {{ $user?->name ?? 'User' }}!</h2>
+			<p>@lang('proton.password.message')</p>
 		</x-proton::td>
 	</x-proton::tr>
 
@@ -30,8 +30,9 @@
 
 	<x-proton::tr>
 		<x-proton::td>
-			<h3> @lang(config('proton.regards_title', 'Regards')) </h3>
-			<p> @lang(config('proton.regards_text', 'Have a nice day!'))</p>
+			<h3>@lang('proton.password.regards_title')</h3>
+			<strong>{{ $user?->name ?? '' }}</strong>
+			<p>@lang('proton.password.regards_text')</p>
 		</x-proton::td>
 	</x-proton::tr>
 
@@ -40,7 +41,7 @@
 			<x-proton::divider />
 
 			<center>
-				<span class="proton-rights"> © @lang(config('proton.rights', '2023 Proton Email')) </span>
+				<span class="proton-rights"> © @lang('proton.rights') </span>
 			</center>
 
 			<br />

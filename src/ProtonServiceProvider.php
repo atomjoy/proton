@@ -27,12 +27,12 @@ class ProtonServiceProvider extends ServiceProvider
 		// Email views
 		$this->loadViewsFrom(__DIR__ . '/../resources/views', 'proton');
 
+		// Locales
+		$this->loadTranslationsFrom(__DIR__ . '/../lang', 'proton');
+		$this->loadJsonTranslationsFrom(__DIR__ . '/../lang');
+
 		// Publish
 		if ($this->app->runningInConsole()) {
-			// Config
-			$this->publishes([
-				__DIR__ . '/../config/config.php' => config_path('proton.php'),
-			], 'proton-config');
 			// Copy images
 			$this->publishes([
 				__DIR__ . '/../public' => public_path('vendor/proton'),
@@ -41,6 +41,14 @@ class ProtonServiceProvider extends ServiceProvider
 			$this->publishes([
 				__DIR__ . '/../resources/views' => resource_path('views/vendor/proton')
 			], 'proton-views');
+			// Locales
+			$this->publishes([
+				__DIR__ . '/../lang' => base_path('lang/vendor/proton'),
+			], 'webi-lang');
+			// Config
+			$this->publishes([
+				__DIR__ . '/../config/config.php' => config_path('proton.php'),
+			], 'proton-config');
 		}
 	}
 }
