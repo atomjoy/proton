@@ -10,16 +10,6 @@ cd email-app
 composer require atomjoy/proton
 ```
 
-### Overwrite files
-
-```sh
-# Copy public files, images
-php artisan vendor:publish --tag=proton-mail --force
-
-# Edit package email views in resources/views/vendor/proton
-php artisan vendor:publish --tag=proton-views --force
-```
-
 ### Send email example
 
 ```php
@@ -46,7 +36,17 @@ Route::get('/proton', function () {
 });
 ```
 
-## Create mail class
+## Edit email templates
+
+```sh
+# Edit package email views in resources/views/vendor/proton
+php artisan vendor:publish --tag=proton-views --force
+
+# Copy images (optional)
+php artisan vendor:publish --tag=proton-mail --force
+```
+
+## Create Laravel mail class
 
 ```sh
 # Or create your own mail class
