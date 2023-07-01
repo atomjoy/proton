@@ -134,7 +134,7 @@
 			<x-proton::divider />
 
 			<center>
-				<span class="proton-rights"> © @lang('proton.rights', '2023 Proton Email') </span>
+				<span class="proton-rights"> © @lang('proton.rights') </span>
 			</center>
 
 			<br />
