@@ -12,7 +12,7 @@
 			<x-proton::margin />
 
 			<center>
-				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-password.png" alt="Image">
+				<img src="{{ config('proton.password_image_url', 'https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png') }}" alt="Image">
 			</center>
 
 			<h2>@lang('proton.password.welcome') {{ $user?->name ?? 'User' }}!</h2>

@@ -12,7 +12,7 @@
 			<x-proton::margin />
 
 			<center>
-				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-register.png" alt="Image">
+				<img src="{{ config('proton.register_image_url', 'https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png') }}" alt="Image">
 			</center>
 
 			<h2>@lang('proton.register.welcome') {{ $user?->name ?? 'User' }}!</h2>
