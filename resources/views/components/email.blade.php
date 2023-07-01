@@ -110,7 +110,7 @@
 		}
 
 		.proton-table a {
-			color: #6d49fc;
+			color: #024ef0;
 			font-weight: bold;
 		}
 
@@ -150,7 +150,7 @@
 			padding: 15px 40px;
 			margin: 20px 0px;
 			color: #ffffff !important;
-			background: #6d49fc !important;
+			background: #024ef0 !important;
 			border-radius: 10px;
 			text-decoration: none;
 			outline: none;
@@ -168,17 +168,11 @@
 			box-sizing: border-box;
 			padding: 15px 40px;
 			margin: 20px 0px;
-			border: 1px dashed #6d49fcaa;
-			background: #6d49fc11;
-			color: #6d49fc;
+			border: 1px dashed #024ef0aa;
+			background: #024ef011;
+			color: #024ef0;
 			font-weight: 700;
 			font-size: 23px;
-		}
-
-		.proton-flex {
-			float: left;
-			width: 100%;
-			text-align: center;
 		}
 
 		.proton-divider {
@@ -187,6 +181,27 @@
 			overflow: hidden;
 			margin: 20px 0px;
 			border-top: 2px solid #f2f2fd;
+		}
+
+		.proton-flex {
+			float: left;
+			width: 100%;
+			text-align: center;
+		}
+
+		.proton-flex img {
+			margin: 10px;
+			max-width: 15%;
+			width: 25px;
+		}
+
+		.proton-social-link {
+			background: #d8d8e4;
+			border-radius: 59%;
+		}
+
+		.proton-social-link img {
+			margin: 10px !important;
 		}
 	</style>
 

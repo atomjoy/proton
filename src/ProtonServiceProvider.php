@@ -13,6 +13,8 @@ class ProtonServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
+		// Add config
+		$this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'proton');
 	}
 
 	/**
@@ -27,9 +29,9 @@ class ProtonServiceProvider extends ServiceProvider
 
 		// Publish
 		if ($this->app->runningInConsole()) {
-			// Sample Mail class
+			// Copy images
 			$this->publishes([
-				__DIR__ . '/../app' => base_path('app'),
+				__DIR__ . '/../public' => public_path('vendor/proton'),
 			], 'proton-mail');
 			// Edit proton view
 			$this->publishes([

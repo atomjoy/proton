@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Mail;
+namespace Proton\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ProtonRegisterMail extends Mailable
+class RegisterMail extends Mailable
 {
 	use Queueable, SerializesModels;
 

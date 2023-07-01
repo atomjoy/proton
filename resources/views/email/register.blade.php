@@ -1,12 +1,6 @@
 <x-proton::email title="{{ __('Activation') }}" locale="pl">
 	<x-slot:style>
 		<style>
-			.proton-flex img {
-				margin: 10px;
-				max-width: 15%;
-				width: 40px;
-			}
-
 			.proton-table tr td {
 				padding: 0px 40px;
 			}
@@ -18,27 +12,26 @@
 			<x-proton::margin />
 
 			<center>
-				<h1> @lang(config('proton.email.message.welcome', 'Welcome')) {{ $user?->name ?? '' }}! </h1>
-				<img src="https://proton.me/images/social/proton-mail-og.png" alt="Image">
+				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-register.png" alt="Image">
 			</center>
 
-			<h2> @lang('Confirm email address') </h2>
-			<p>@lang(config('proton.email.message.activation', 'Activate youe email addres now.'))</p>
+			<h2> @lang(config('proton.welcome.register', 'Welcome')) {{ $user?->name ?? 'User' }}! </h2>
+			<p>@lang(config('proton.activation_text', 'This activation e-mail is sent to the e-mail address that you registered on our site. To activate your account, please click on the link below.'))</p>
 		</x-proton::td>
 	</x-proton::tr>
 
 	<x-proton::tr>
 		<x-proton::td>
 			<x-proton::button url="{{ request()->getSchemeAndHttpHost() }}/activate/{{ $user?->id ?? '0' }}/{{ $user?->code ?? 'nocode' }}?locale={{ app()->getLocale() }}">
-				@lang('Confirm Email')
+				@lang(config('proton.button.confirm_email', 'Confirm Email'))
 			</x-proton::button>
 		</x-proton::td>
 	</x-proton::tr>
 
 	<x-proton::tr>
 		<x-proton::td>
-			<h3> @lang('Regards') </h3>
-			<p> @lang('Have a nice day!')</p>
+			<h3> @lang(config('proton.regards_title', 'Regards')) </h3>
+			<p> @lang(config('proton.regards_text', 'Have a nice day!'))</p>
 		</x-proton::td>
 	</x-proton::tr>
 
@@ -47,24 +40,26 @@
 			<x-proton::divider />
 
 			<center>
-				<span style="color: #706d6b;"> © 2023 Proton Switzerland </span>
+				<span style="color: #706d6b;"> © @lang(config('proton.rights', '2023 Proton Email')) </span>
 			</center>
 
+			<br />
+
 			<x-proton::flex>
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/facebook.png" alt="Image">
 				</a>
 
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/twitter.png" alt="Image">
 				</a>
 
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/instagram.png" alt="Image">
 				</a>
 
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/tiktok.png" alt="Image">
 				</a>
 			</x-proton::flex>
 

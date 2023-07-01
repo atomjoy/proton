@@ -1,12 +1,6 @@
 <x-proton::email title="{{ __('Password') }}" locale="pl">
 	<x-slot:style>
 		<style>
-			.proton-flex img {
-				margin: 10px;
-				max-width: 15%;
-				width: 40px;
-			}
-
 			.proton-table tr td {
 				padding: 0px 40px;
 			}
@@ -18,12 +12,11 @@
 			<x-proton::margin />
 
 			<center>
-				<h1> @lang(config('proton.email.message.welcome', 'Welcome')) {{ $user?->name ?? '' }}! </h1>
-				<img src="https://proton.me/images/social/proton-mail-og.png" alt="Image">
+				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-password.png" alt="Image">
 			</center>
 
-			<h2> @lang('Password') </h2>
-			<p>@lang(config('proton.email.message.reset_password', 'This is your new password.'))</p>
+			<h2> @lang(config('proton.welcome.password', 'Welcome again')) {{ $user?->name ?? 'User' }}! </h2>
+			<p>@lang(config('proton.password_text', 'This is your new password.'))</p>
 		</x-proton::td>
 	</x-proton::tr>
 
@@ -37,8 +30,8 @@
 
 	<x-proton::tr>
 		<x-proton::td>
-			<h3> @lang('Regards') </h3>
-			<p> @lang('Have a nice day!')</p>
+			<h3> @lang(config('proton.regards_title', 'Regards')) </h3>
+			<p> @lang(config('proton.regards_text', 'Have a nice day!'))</p>
 		</x-proton::td>
 	</x-proton::tr>
 
@@ -47,24 +40,26 @@
 			<x-proton::divider />
 
 			<center>
-				<span style="color: #706d6b;"> © 2023 Proton Switzerland </span>
+				<span style="color: #706d6b;"> © @lang(config('proton.rights', '2023 Proton Email')) </span>
 			</center>
 
+			<br />
+
 			<x-proton::flex>
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/facebook.png" alt="Image">
 				</a>
 
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/twitter.png" alt="Image">
 				</a>
 
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/instagram.png" alt="Image">
 				</a>
 
-				<a href="https://proton.me" class="proton-link">
-					<img src="https://img.icons8.com/?size=64&id=LPcVDft9Isqt&format=png" alt="Image">
+				<a href="" class="proton-link proton-social-link">
+					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/tiktok.png" alt="Image">
 				</a>
 			</x-proton::flex>
 

@@ -13,7 +13,7 @@ composer require atomjoy/proton
 ### Overwrite files
 
 ```sh
-# Create sample mail class in app/Mail
+# Copy public files, images
 php artisan vendor:publish --tag=proton-mail --force
 
 # Edit package email views in resources/views/vendor/proton
@@ -23,20 +23,26 @@ php artisan vendor:publish --tag=proton-views --force
 ### Send email example
 
 ```php
+<?php
+use Proton\Mail\DefaultMail;
+use Proton\Mail\RegisterMail;
+use Proton\Mail\PasswordMail;
+
 Route::get('/proton', function () {
   // Send email sample
-  Mail::to('user@laravel.com')->send(new ProtonMail());
+  Mail::to('user@laravel.com')->send(new DefaultMail());
 
   // User reset password
-  Mail::to('user@laravel.com')->send(new ProtonPasswordMail('XXX-123'));
+  Mail::to('user@laravel.com')->send(new PasswordMail('XXX-123'));
 
   // User activation link (User model requires columns: id, name, code), use User or null for example
-  Mail::to('user@laravel.com')->send(new ProtonRegisterMail(null));
+  Mail::to('user@laravel.com')->send(new RegisterMail(null));
 
   // Show example email view
   return view('proton::email.default');
   // return view('proton::email.password');
   // return view('proton::email.register');
+  // return view('proton::email.signature');
 });
 ```
 
