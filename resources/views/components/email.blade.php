@@ -203,6 +203,10 @@
 		.proton-social-link img {
 			margin: 10px !important;
 		}
+
+		.proton-rights {
+			color: #706d6b;
+		}
 	</style>
 
 	{{ $style ?? '' }}

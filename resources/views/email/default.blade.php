@@ -134,27 +134,16 @@
 			<x-proton::divider />
 
 			<center>
-				<span style="color: #706d6b;"> © @lang(config('proton.rights', '2023 Proton Email')) </span>
+				<span class="proton-rights"> © @lang(config('proton.rights', '2023 Proton Email')) </span>
 			</center>
 
 			<br />
 
 			<x-proton::flex>
-				<a href="" class="proton-link proton-social-link" target="_blank">
-					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/facebook.png" alt="Image">
-				</a>
-
-				<a href="" class="proton-link proton-social-link" target="_blank">
-					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/twitter.png" alt="Image">
-				</a>
-
-				<a href="" class="proton-link proton-social-link" target="_blank">
-					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/instagram.png" alt="Image">
-				</a>
-
-				<a href="" class="proton-link proton-social-link" target="_blank">
-					<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/social/tiktok.png" alt="Image">
-				</a>
+				<x-proton::social name="twitter" />
+				<x-proton::social name="tiktok" />
+				<x-proton::social name="facebook" />
+				<x-proton::social name="instagram" />
 			</x-proton::flex>
 
 			<x-proton::margin />
