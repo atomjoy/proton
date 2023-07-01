@@ -53,10 +53,20 @@ Route::get('/proton', function () {
 php artisan make:mail PromoMail
 ```
 
-## Email image
+## Email images
+
+### Example email
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png" width="100%">
 
-## Html email signature image
+### Activation email
+
+<img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-register.png" width="100%">
+
+### Password email
+
+<img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-password.png" width="100%">
+
+### Html email signature image
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-signature.png" width="100%">
