@@ -44,7 +44,7 @@ class ProtonServiceProvider extends ServiceProvider
 			// Locales
 			$this->publishes([
 				__DIR__ . '/../lang' => base_path('lang/vendor/proton'),
-			], 'webi-lang');
+			], 'proton-lang');
 			// Config
 			$this->publishes([
 				__DIR__ . '/../config/config.php' => config_path('proton.php'),
