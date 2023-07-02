@@ -14,18 +14,25 @@ composer require atomjoy/proton
 
 ```php
 <?php
+use App\Models\User;
 use Proton\Mail\DefaultMail;
 use Proton\Mail\RegisterMail;
 use Proton\Mail\PasswordMail;
 
 Route::get('/proton', function () {
+  // Set locale
+  // app()->setLocale('pl');
+
+  // User (required columns: id, name, code)
+  // $user = User::first();
+
   // Send email sample
   Mail::to('user@laravel.com')->send(new DefaultMail());
 
-  // User reset password
-  Mail::to('user@laravel.com')->send(new PasswordMail('XXX-123'));
+  // User reset password, use null for example
+  Mail::to('user@laravel.com')->send(new PasswordMail(null, 'XXX-123'));
 
-  // User activation link (User model requires columns: id, name, code), use User or null for example
+  // User activation link (User model required columns: id, name, code), use null for example
   Mail::to('user@laravel.com')->send(new RegisterMail(null));
 
   // Show example email view
