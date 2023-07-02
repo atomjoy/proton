@@ -29,7 +29,7 @@ class PasswordMail extends Mailable
 	public function envelope(): Envelope
 	{
 		return new Envelope(
-			subject: '🙂 Welcome!',
+			subject: trans('proton.password.subject'),
 		);
 	}
 

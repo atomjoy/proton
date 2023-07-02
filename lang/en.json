@@ -6,11 +6,13 @@
 	"proton.password.message": "We have prepared a new password for you. Below you will find your new password.",
 	"proton.password.regards_title": "Regards",
 	"proton.password.regards_text": "Have a nice day!",
+	"proton.password.subject": "🙂 New password.",
 
 	"proton.register.title": "Account activation",
 	"proton.register.welcome": "Welcome",
 	"proton.register.message": "This activation e-mail is sent to the e-mail address that you registered on our site. To activate your account, please click on the link below.",
 	"proton.register.regards_title": "Regards",
 	"proton.register.regards_text": "Have a nice day!",
-	"proton.register.button": "Confirm Email"
+	"proton.register.button": "Confirm Email",
+	"proton.register.subject": "🙂 Account activation."
 }

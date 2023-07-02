@@ -6,11 +6,13 @@
 	"proton.password.message": "Przygotowaliśmy dla Ciebie nowe hasło. Poniżej znajdziesz swoje nowe hasło.",
 	"proton.password.regards_title": "Pozdrawiamy",
 	"proton.password.regards_text": "Do zobaczenia, miłego dnia!",
+	"proton.password.subject": "🙂 Nowe hasło.",
 
 	"proton.register.title": "Aktywacja konta",
 	"proton.register.welcome": "Witaj",
 	"proton.register.message": "Ta wiadomość została wysyłana na adres e-mail, który zarejestrowałeś na naszej stronie. Aby aktywować konto, kliknij w poniższy link.",
 	"proton.register.regards_title": "Pozdrawiamy",
 	"proton.register.regards_text": "Do zobaczenia, miłego dnia!",
-	"proton.register.button": "Potwierdź Email"
+	"proton.register.button": "Potwierdź Email",
+	"proton.register.subject": "🙂 Aktywacja konta."
 }
