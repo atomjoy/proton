@@ -2,6 +2,7 @@
 
 namespace Proton\Mail;
 
+use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -13,13 +14,15 @@ class PasswordMail extends Mailable
 {
 	use Queueable, SerializesModels;
 
+	public $user = null;
 	public $password = null;
 
 	/**
 	 * Create a new message instance.
 	 */
-	public function __construct($password)
+	public function __construct(?User $user, $password)
 	{
+		$this->user = $user;
 		$this->password = $password;
 	}
 
