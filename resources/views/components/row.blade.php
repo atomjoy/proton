@@ -4,7 +4,7 @@
 </x-proton.row>
 --}}
 <x-proton::tr>
-	<x-proton::td colspan="100">
+	<x-proton::td class="{{ $class ?? '' }}" colspan="{{ $colspan ?? 10 }}" style="{{ $style ?? '' }}">
 		{{ $slot }}
 	</x-proton::td>
 </x-proton::tr>

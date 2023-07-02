@@ -20,20 +20,19 @@ use Proton\Mail\RegisterMail;
 use Proton\Mail\PasswordMail;
 
 Route::get('/proton', function () {
-  // Set locale
-  // app()->setLocale('pl');
-
   // User (required columns: id, name, code)
-  // $user = User::first();
+  $user = User::first();
 
   // Send email sample
   Mail::to('user@laravel.com')->send(new DefaultMail());
 
   // User reset password, use null for example
-  Mail::to('user@laravel.com')->send(new PasswordMail(null, 'XXX-123'));
+  Mail::to('user@laravel.com')->send(new PasswordMail($user, '321-XXX-123'));
+  Mail::to('user@laravel.com')->locale('pl')->send(new PasswordMail($user, '321-XXX-123'));
 
   // User activation link (User model required columns: id, name, code), use null for example
-  Mail::to('user@laravel.com')->send(new RegisterMail(null));
+  Mail::to('user@laravel.com')->send(new RegisterMail($user));
+  Mail::to('user@laravel.com')->locale('pl')->send(new RegisterMail($user));
 
   // Show example email view
   return view('proton::email.default');

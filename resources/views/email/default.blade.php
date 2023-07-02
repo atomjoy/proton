@@ -7,69 +7,56 @@
 		</style>
 	</x-slot:style>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<x-proton::margin />
+	<x-proton::row>
+		<x-proton::margin />
 
-			<center>
-				<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
-			</center>
+		<center>
+			<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
+		</center>
 
-			<h2> Welcome {{ auth()->user()?->name ?? 'Alex' }}! </h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus <a href="">go to site</a> . Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium
-				repudiandae!</p>
-		</x-proton::td>
-	</x-proton::tr>
+		<h2> Welcome {{ auth()->user()?->name ?? 'Alex' }}! </h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus <a href="">go to site</a> . Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium
+			repudiandae!</p>
+	</x-proton::row>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<x-proton::button url="http://localhost">
-				Confirm Email
-			</x-proton::button>
-		</x-proton::td>
-	</x-proton::tr>
+	<x-proton::row>
+		<x-proton::button url="http://localhost">
+			Confirm Email
+		</x-proton::button>
+	</x-proton::row>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<h2> Secret code </h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus accusantium repudiandae!</p>
+	<x-proton::row>
+		<h2> Secret code </h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus accusantium repudiandae!</p>
 
-			<x-proton::code>
-				KLE-6677-HJS-7866
-			</x-proton::code>
-		</x-proton::td>
-	</x-proton::tr>
+		<x-proton::code>
+			KLE-6677-HJS-7866
+		</x-proton::code>
+	</x-proton::row>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<h2> About company </h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus. Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium repudiandae!</p>
-		</x-proton::td>
-	</x-proton::tr>
+	<x-proton::row>
+		<h2> About company </h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus. Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium repudiandae!</p>
+	</x-proton::row>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<h2> Current promotions </h2>
-		</x-proton::td>
-	</x-proton::tr>
+	<x-proton::row>
+		<h2> Current promotions </h2>
+	</x-proton::row>
 
-	<x-proton::tr>
-		<x-proton::td colspan="3" style="padding-right: 10px;">
+	<x-proton::row2>
+		<x-slot:slot1>
 			<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus. Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium repudiandae!</p>
-		</x-proton::td>
-
-		<x-proton::td colspan="3" style="padding-left: 10px;">
+		</x-slot:slot1>
+		<x-slot:slot2>
 			<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png" alt="Image">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto minus. Placeat sapiente perspiciatis illum corporis earum obcaecati illo mollitia inventore voluptatibus, ipsa, quasi quaerat dolorem commodi labore accusantium repudiandae!</p>
-		</x-proton::td>
-	</x-proton::tr>
+		</x-slot:slot2>
+	</x-proton::row2>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<h2> Gallery </h2>
-		</x-proton::td>
-	</x-proton::tr>
+	<x-proton::row>
+		<h2> Gallery </h2>
+	</x-proton::row>
 
 	<x-proton::row2>
 		<x-slot:slot1>
@@ -97,11 +84,9 @@
 		</x-slot:slot2>
 	</x-proton::row2>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<h2> Links </h2>
-		</x-proton::td>
-	</x-proton::tr>
+	<x-proton::row>
+		<h2> Links </h2>
+	</x-proton::row>
 
 	<x-proton::row3>
 		<x-slot:slot1>
@@ -121,32 +106,28 @@
 		</x-slot:slot3>
 	</x-proton::row3>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<br />
-			<h3> Regards </h3>
-			<p>Alex, <br /> Have a nice day!</p>
-		</x-proton::td>
-	</x-proton::tr>
+	<x-proton::row>
+		<br />
+		<h3> Regards </h3>
+		<p>Alex, <br /> Have a nice day!</p>
+	</x-proton::row>
 
-	<x-proton::tr>
-		<x-proton::td>
-			<x-proton::divider />
+	<x-proton::row>
+		<x-proton::divider />
 
-			<center>
-				<span class="proton-rights"> © @lang('proton.rights') </span>
-			</center>
+		<center>
+			<span class="proton-rights"> © @lang('proton.rights') </span>
+		</center>
 
-			<br />
+		<br />
 
-			<x-proton::flex>
-				<x-proton::social name="twitter" />
-				<x-proton::social name="tiktok" />
-				<x-proton::social name="facebook" />
-				<x-proton::social name="instagram" />
-			</x-proton::flex>
+		<x-proton::flex>
+			<x-proton::social name="twitter" />
+			<x-proton::social name="tiktok" />
+			<x-proton::social name="facebook" />
+			<x-proton::social name="instagram" />
+		</x-proton::flex>
 
-			<x-proton::margin />
-		</x-proton::td>
-	</x-proton::tr>
+		<x-proton::margin />
+	</x-proton::row>
 </x-proton::email>
