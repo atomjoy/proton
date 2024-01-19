@@ -9,7 +9,7 @@ $password = (string) $password ?? '000000';
 				padding: 0px 40px;
 			}
 
-			cyfra {
+			ul {
 				display: inline-block;
 				padding: 10px 15px;
 				margin: 5px 5px;
@@ -36,12 +36,12 @@ $password = (string) $password ?? '000000';
 
 	<x-proton::row>
 		<x-proton::code>
-			<cyfra>{{ $password[0] ?? 0 }}</cyfra>
-			<cyfra>{{ $password[1] ?? 0 }}</cyfra>
-			<cyfra>{{ $password[2] ?? 0 }}</cyfra>
-			<cyfra>{{ $password[3] ?? 0 }}</cyfra>
-			<cyfra>{{ $password[4] ?? 0 }}</cyfra>
-			<cyfra>{{ $password[5] ?? 0 }}</cyfra>
+			<ul>{{ $password[0] ?? 0 }}</ul>
+			<ul>{{ $password[1] ?? 0 }}</ul>
+			<ul>{{ $password[2] ?? 0 }}</ul>
+			<ul>{{ $password[3] ?? 0 }}</ul>
+			<ul>{{ $password[4] ?? 0 }}</ul>
+			<ul>{{ $password[5] ?? 0 }}</ul>
 		</x-proton::code>
 	</x-proton::row>
 
