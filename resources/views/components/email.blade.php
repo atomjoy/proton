@@ -30,7 +30,7 @@
 			background: #f2f2fd;
 			font-size: 18px;
 			font-weight: normal;
-			font-family: 'Baloo 2', 'Open Sans', 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Tahoma, Arial, monospace, sans-serif;
+			font-family: 'Baloo 2', 'Google Sans', 'Open Sans', 'Roboto', 'Segoe UI', 'Helvetica Neue', Helvetica, Tahoma, Arial, monospace, sans-serif;
 		}
 
 		.proton-table {
