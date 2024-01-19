@@ -1,5 +1,5 @@
 {
-	"proton.rights": "2023 Wszelkie Prawa Zastrzeżone.",
+	"proton.rights": "Wszelkie Prawa Zastrzeżone.",
 
 	"proton.password.title": "Nowe hasło",
 	"proton.password.welcome": "Witaj",
@@ -14,5 +14,12 @@
 	"proton.register.regards_title": "Pozdrawiamy",
 	"proton.register.regards_text": "Do zobaczenia, miłego dnia!",
 	"proton.register.button": "Potwierdź Email",
-	"proton.register.subject": "🙂 Aktywacja konta."
+	"proton.register.subject": "🙂 Aktywacja konta.",
+
+	"proton.f2a.title": "Kod autoryzacji.",
+	"proton.f2a.welcome": "Witaj",
+	"proton.f2a.message": "Twój kod autoryzacji znajdziesz poniżej.",
+	"proton.f2a.regards_title": "Pozdrawiamy",
+	"proton.f2a.regards_text": "Do zobaczenia, miłego dnia!",
+	"proton.f2a.subject": "🙂 Kod autoryzacji."
 }

@@ -1,5 +1,5 @@
 {
-	"proton.rights": "2023 All Rights Reserved.",
+	"proton.rights": "All Rights Reserved.",
 
 	"proton.password.title": "New password",
 	"proton.password.welcome": "Welcome",
@@ -14,5 +14,12 @@
 	"proton.register.regards_title": "Regards",
 	"proton.register.regards_text": "Have a nice day!",
 	"proton.register.button": "Confirm Email",
-	"proton.register.subject": "🙂 Account activation."
+	"proton.register.subject": "🙂 Account activation.",
+
+	"proton.f2a.title": "Authentication code.",
+	"proton.f2a.welcome": "Welcome",
+	"proton.f2a.message": "We have prepared a new code for you. Below you will find your new code.",
+	"proton.f2a.regards_title": "Regards",
+	"proton.f2a.regards_text": "Have a nice day!",
+	"proton.f2a.subject": "🙂 Authentication code."
 }

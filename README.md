@@ -18,6 +18,7 @@ use App\Models\User;
 use Proton\Mail\DefaultMail;
 use Proton\Mail\RegisterMail;
 use Proton\Mail\PasswordMail;
+use Proton\Mail\F2aMail;
 
 Route::get('/proton', function () {
   // User (required columns: id, name, code)
@@ -34,11 +35,16 @@ Route::get('/proton', function () {
   Mail::to('user@laravel.com')->send(new RegisterMail($user));
   Mail::to('user@laravel.com')->locale('pl')->send(new RegisterMail($user));
 
+  // Code email
+  Mail::to('user@laravel.com')->send(new F2aMail($user, 888777));
+  Mail::to('user@laravel.com')->locale('pl')->send(new F2aMail($user, 888777));
+
   // Show example email view
   return view('proton::email.default');
   // return view('proton::email.password');
   // return view('proton::email.register');
   // return view('proton::email.signature');
+  // return view('proton::email.f2a', ['user' => $user, 'password' => 888777]);
 });
 ```
 
