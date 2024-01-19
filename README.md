@@ -85,6 +85,10 @@ php artisan make:mail PromoMail
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-password.png" width="100%">
 
+### 2FA email
+
+<img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-f2a.png" width="100%">
+
 ### Html email signature image
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-signature.png" width="100%">
