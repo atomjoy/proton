@@ -22,7 +22,11 @@ use Proton\Mail\F2aMail;
 
 Route::get('/proton', function () {
   // User (required columns: id, name, code)
-  $user = User::first();
+  // $user = User::first();
+
+  $user = User::factory(1)->make([
+    'email' => 'user@laravel.com'
+  ])->first();
 
   // Send email sample
   Mail::to('user@laravel.com')->send(new DefaultMail());
