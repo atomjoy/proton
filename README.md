@@ -96,3 +96,7 @@ php artisan make:mail PromoMail
 ### Html email signature image
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-signature.png" width="100%">
+
+## LICENSE
+
+This project is licensed under the terms of the GNU GPLv3 license.
