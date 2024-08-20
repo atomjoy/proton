@@ -5,7 +5,10 @@ Laravel proton html email template blade components.
 ## Install package
 
 ```sh
-composer create-project laravel/laravel:^10.0 email-app
+# Create laravel project
+composer create-project laravel/laravel:^11.0 email-app
+# Or
+composer create-project laravel/laravel email-app
 cd email-app
 composer require atomjoy/proton
 ```
