@@ -1,6 +1,6 @@
-# Proton html email template in Laravel
+# Laravel Blade Email Templates
 
-Html email templates for Laravel with blade components. Html email footer signature in Laravel.
+How to send HTML email using Laravel. HTML email templates for Laravel with blade components. HTML email footer signature in Laravel.
 
 ## Install package
 
