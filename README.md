@@ -1,6 +1,6 @@
-# Laravel Blade Email Templates
+# Laravel Html Email Components (Blade)
 
-How to send HTML email using Laravel. HTML email templates for Laravel with blade components. HTML email footer signature in Laravel.
+Html email blade components for Laravel. Html email footer signature example.
 
 ## Install package
 
