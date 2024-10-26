@@ -179,13 +179,21 @@
 				padding-right: 15px
 			}
 
-			.proton-row-width-33-padding-left {
+			table.proton-row-width-33 {
+				width: 33%;
+				padding: 0px;
+				box-sizing: border-box;
+				height: auto;
+				min-height: 390px;
+			}
+
+			table.proton-row-width-33-padding-left {
 				padding-left: 14px;
 			}
-			.proton-row-width-33-padding-center {
+			table.proton-row-width-33-padding-center {
 				padding: 0px 7px;
 			}
-			.proton-row-width-33-padding-right {
+			table.proton-row-width-33-padding-right {
 				padding-right: 14px;
 			}
 
@@ -245,13 +253,13 @@
 				padding: 20px 0px !important;
 			} */
 
-			@media only screen and (max-width: 660px)  {
+			@media only screen and (max-width: 1024px)  {
 				.proton-row-width-50 {
 					width: 100%;
 					padding: 0px;
 				}
 
-				.proton-row-width-33 {
+				table.proton-row-width-33 {
 					width: 100%;
 					padding: 0px;
 				}
@@ -304,9 +312,9 @@
 		<x-proton::tags.margin />
 		
 		<x-proton::promo.products 
-			img1="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/images11.jpg" text1="Mobiles" title1="Xiaomi Redmi</br>Silver 4/128GB</br>Green" price1="2590PLN" promoprice1="2250PLN" divider1="true"
-			img2="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/images12.jpg" text2="Headphones" title2="Steal Series 6</br>Cosmo 700</br>WiFi" price2="3490PLN" promoprice2="3090PLN" divider2="true"
-			img3="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/images13.jpg" text3="Earsphones" title3="Apple AirPods</br> 2 generation</br>Lighting" price3="990PLN" promoprice3="780PLN" divider3="true"
+			img1="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/images11.jpg" text1="Mobiles" title1="Xiaomi Redmi </br> Silver 4/128GB </br> Green" price1="2590PLN" promoprice1="2250PLN" divider1="true"
+			img2="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/images12.jpg" text2="Headphones" title2="Steal Series 6 </br> Cosmo 700 </br> WiFi" price2="3490PLN" promoprice2="3090PLN" divider2="true"
+			img3="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/images13.jpg" text3="Earsphones" title3="Apple AirPods </br> GenX </br> Lighting" price3="990PLN" promoprice3="780PLN" divider3="true"
 		/>
 
 		<x-proton::promo.products 
