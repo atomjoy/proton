@@ -80,6 +80,10 @@ php artisan make:mail PromoMail
 
 ## Email images
 
+### Newsletter email
+
+<img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-newsletter.png" width="100%">
+
 ### Example email
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/main/proton-email.png" width="100%">
