@@ -326,10 +326,12 @@
 
 	<x-proton::row>
 		<x-proton::tags.divider />
-		<x-proton::tags.margin />
-		<center>
-			<img src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/promo-banner.jpg" alt="Image" style="margin-bottom: 0px">
-		</center>
+		<x-proton::tags.margin />		
+		<img 
+			src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/promo-banner.jpg" 
+			alt="Image" 
+			style="margin-bottom: 0px; float: left; width: 100%;"
+		>
 		<x-proton::tags.margin />
 		<x-proton::tags.divider />
 	</x-proton::row>
