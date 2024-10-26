@@ -1,6 +1,6 @@
 # Laravel Html Email Components (Blade)
 
-Html email blade components for Laravel. Html email footer signature example.
+Html email blade components for Laravel. Html email footer signature example. Products html email newsletter (RWD).
 
 ## Install package
 
