@@ -47,7 +47,8 @@ Route::get('/proton', function () {
   Mail::to('user@laravel.com')->locale('pl')->send(new F2aMail($user, 888777));
 
   // Show example email view
-  return view('proton::email.default');
+  return view('proton::email.newsletter');
+  // return view('proton::email.default');
   // return view('proton::email.password');
   // return view('proton::email.register');
   // return view('proton::email.signature');
