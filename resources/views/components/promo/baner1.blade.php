@@ -4,7 +4,7 @@
         <table align="left" width="33.333%" border="0" cellpadding="0" cellspacing="0" class="proton-baner1-item">
             <tr>
                 <td align="center">
-                    <img class="email-image-small" src="/images/icon-chat.png" alt="Icon" width="90">
+                    <img class="email-image-small" src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/icon-chat.png" alt="Icon" width="90">
                     <x-proton::tags.margin />
                 </td>
             </tr>        
@@ -18,7 +18,7 @@
         <table align="left" width="33.333%" border="0" cellpadding="0" cellspacing="0" class="proton-baner1-item">
             <tr>
                 <td align="center">
-                    <img class="email-image-small" src="/images/icon-refresh.png" alt="Icon" width="90">
+                    <img class="email-image-small" src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/icon-refresh.png" alt="Icon" width="90">
                     <x-proton::tags.margin />
                 </td>
             </tr>        
@@ -32,7 +32,7 @@
         <table align="left" width="33.333%" border="0" cellpadding="0" cellspacing="0" class="proton-baner1-item">
             <tr>
                 <td align="center">
-                    <img class="email-image-small" src="/images/icon-percent.png" alt="Icon" width="90">
+                    <img class="email-image-small" src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/icon-percent.png" alt="Icon" width="90">
                     <x-proton::tags.margin />
                 </td>
             </tr>        

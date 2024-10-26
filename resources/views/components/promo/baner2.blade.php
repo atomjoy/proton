@@ -4,7 +4,7 @@
         <table align="left" width="33.333%" border="0" cellpadding="0" cellspacing="0" class="proton-baner2-item">
             <tr>
                 <td align="center">
-                    <img class="email-image-small" src="/images/icon-email.png" alt="Icon" width="40">                    
+                    <img class="email-image-small" src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/icon-email.png" alt="Icon" width="40">                    
                 </td>
             </tr>        
             <tr>
@@ -17,7 +17,7 @@
         <table align="left" width="33.333%" border="0" cellpadding="0" cellspacing="0" class="proton-baner2-item">
             <tr>
                 <td align="center">
-                    <img class="email-image-small" src="/images/icon-phone.png" alt="Icon" width="40">                    
+                    <img class="email-image-small" src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/icon-phone.png" alt="Icon" width="40">                    
                 </td>
             </tr>        
             <tr>
@@ -30,7 +30,7 @@
         <table align="left" width="33.333%" border="0" cellpadding="0" cellspacing="0" class="proton-baner2-item">
             <tr>
                 <td align="center">
-                    <img class="email-image-small" src="/images/icon-cart.png" alt="Icon" width="40">                    
+                    <img class="email-image-small" src="https://raw.githubusercontent.com/atomjoy/proton/main/public/images/icon-cart.png" alt="Icon" width="40">                    
                 </td>
             </tr>        
             <tr>
