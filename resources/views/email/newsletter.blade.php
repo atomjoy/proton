@@ -187,13 +187,13 @@
 				min-height: 390px;
 			}
 
-			table.proton-row-width-33-padding-left {
+			table.proton-row-width-33-padding-left tr td {
 				padding-left: 14px;
 			}
-			table.proton-row-width-33-padding-center {
+			table.proton-row-width-33-padding-center tr td {
 				padding: 0px 7px;
 			}
-			table.proton-row-width-33-padding-right {
+			table.proton-row-width-33-padding-right tr td {
 				padding-right: 14px;
 			}
 
@@ -260,6 +260,11 @@
 				}
 
 				table.proton-row-width-33 {
+					width: 100%;
+					padding: 0px;
+				}
+
+				table.proton-row-width-33 tr td {
 					width: 100%;
 					padding: 0px;
 				}
