@@ -6,4 +6,7 @@ return [
     'f2a_image_url' => 'https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png',
     'default_image_url' => 'https://raw.githubusercontent.com/atomjoy/proton/main/public/proton-default.png',
     'footer_image_url' => 'https://raw.githubusercontent.com/atomjoy/proton/main/public/logo-proton-grey.png',
+    'footer_company' => '© 2025 Proton AG',
+    'footer_street' => 'Route de la Galaise 32',
+    'footer_city' => '1228 Plan-les-Ouates, Geneva',
 ];
