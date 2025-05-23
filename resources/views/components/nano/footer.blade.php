@@ -12,6 +12,6 @@
 
         <div class="nano-divider"></div>
 
-        <div class="nano-p nano-font-small">This message was sent to you because you indicated that you are willing to stay up to date with news from us. If you don't want to receive such emails in the future, please unsubscribe <a href="{{ request()->getSchemeAndHttpHost() . '/unsubscribe/email' }}" target="_blank">here</a>.</div>
+        <div class="nano-p nano-font-small">@lang('proton.footer_unsubscribe_text') <a href="{{ request()->getSchemeAndHttpHost() . '/unsubscribe/email' }}" target="_blank">@lang('proton.footer_unsubscribe_button_text')</a>.</div>
     </div>
 </x-proton::row>
