@@ -14,7 +14,7 @@ class F2aMail extends Mailable
     public $user = null;
     public $password = null;
 
-    public function __construct(User $user, $password)
+    public function __construct(?User $user, $password)
     {
         $this->user = $user;
         $this->password = $password;

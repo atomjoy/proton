@@ -11,9 +11,9 @@ class RegisterMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $user;
+    public $user = null;
 
-    public function __construct(?User $user = null)
+    public function __construct(?User $user)
     {
         $this->user = $user;
     }

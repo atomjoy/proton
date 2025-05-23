@@ -7,24 +7,26 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use App\Models\User;
 
-class DefaultMail extends Mailable
+class FullMail extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $user = null;
     public $text = null;
     public $url = null;
+    public $password = null;
 
-    public function __construct(?User $user, $text, $url = '')
+    public function __construct(?User $user, $text, $url = '', $password = '123456')
     {
         $this->user = $user;
         $this->text = $text;
         $this->url = $url;
+        $this->password = $password;
     }
 
     public function build()
     {
         return $this->subject(trans('proton.default.subject'))
-            ->view('proton::email.nano.default');
+            ->view('proton::email.nano.full');
     }
 }
