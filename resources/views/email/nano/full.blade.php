@@ -9,7 +9,7 @@
     <x-proton::row class="nano-padding-inline">
         <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
         <div class="nano-p">
-            {{ $text ?? 'Empty email message!' }}
+            {{ $text ?? 'Empty message.' }}
         </div>
     </x-proton::row>
 
