@@ -40,9 +40,10 @@ Route::get('/proton', function () {
   Mail::to('user@laravel.com')->send(
     new NanoFullMail(
         $user,
-        'Lo9em3 ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur ipsum natus quidem? Facere voluptates ratione impedit sequi soluta laboriosam error quisquam.',
-        'https://example.com',
-        '123654'
+        'Message text goes here ...',
+        'https://url.example.com',
+        'Xyz123Wo65',
+        '690470'
     )
   );
 
