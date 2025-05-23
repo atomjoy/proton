@@ -36,7 +36,7 @@ Route::get('/proton', function () {
     'email' => 'user@laravel.com'
   ])->first();
 
-  // Nano dample
+  // Nano email
   Mail::to('user@laravel.com')->send(
     new NanoFullMail(
         $user,
