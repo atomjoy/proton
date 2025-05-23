@@ -12,7 +12,9 @@
     </x-proton::row>
 
     @if (!empty($url))
-    <x-proton::nano.button url="{{ $url }}">@lang('Click here')</x-proton::nano.button>
+    <x-proton::nano.button url="{{ $url }}">
+        @lang('Click here')
+    </x-proton::nano.button>
     @endif
 
     <x-proton::nano.regards />
