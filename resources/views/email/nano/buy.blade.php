@@ -8,28 +8,16 @@
     <x-proton::nano.browser url="{{ $browser_url }}" />
     @endif
 
-    <x-proton::nano.header />
+    <x-proton::nano.header_buy />
 
     <x-proton::nano.row class="nano-padding-inline">
         <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
         <div class="nano-p">
-            {{ $text ?? 'Empty message.' }}
+            {{ $text ?? 'Latest promotions in our shop.' }}
         </div>
     </x-proton::nano.row>
 
-    @if (!empty($url))
-    <x-proton::nano.button url="{{ $url }}">
-        @lang('Click here')
-    </x-proton::nano.button>
-    @endif
-
-    @if (!empty($code))
-    <x-proton::nano.code password="{{ $code }}" />
-    @endif
-
-    @if (!empty($password))
-    <x-proton::nano.password password="{{ $password }}" />
-    @endif
+    <x-proton::nano.products :products="$products" />
 
     <x-proton::nano.regards />
 
