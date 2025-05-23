@@ -27,6 +27,7 @@ use Proton\Mail\F2aMail;
 
 // Nano emails
 use Proton\Mail\Nano\FullMail as NanoFullMail;
+use Proton\Mail\Nano\BuyMail as NanoBuyMail;
 
 Route::get('/proton', function () {
   // User (required columns: id, name, code)
@@ -51,16 +52,23 @@ Route::get('/proton', function () {
       ],
   ];
 
+  $params_buy = [
+		'user' => $user,
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',
+		'products' => $products,
+	];
+
+  $params_full = [
+		'user' => $user,
+		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',		
+		'url' => 'https://url.example.com',
+		'password' => 'Xyz123Wo65',
+		'code' => '690470',
+	];
+
   // Nano email
-  Mail::to('user@laravel.com')->send(
-    new NanoFullMail(
-        $user,
-        'Message text goes here ...',
-        'https://url.example.com',
-        'Xyz123Wo65',
-        '690470'
-    )
-  );
+  Mail::to('user@laravel.com')->send(new NanoFullMail(...$params_full));
+  Mail::to('user@laravel.com')->send(new NanoBuyMail(...$params_buy));
 
   // Send email sample
   Mail::to('user@laravel.com')->send(new DefaultMail());
