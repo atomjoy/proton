@@ -9,11 +9,7 @@
     <x-proton::row class="nano-padding-inline">
         <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
         <div class="nano-p">
-            Lorem ipsum dolor sit, amet consectetur adipisicing
-            <a href="https://example.com" target="_blank" />click here</a>.
-            Ea error eligendi, magni temporibus voluptas laboriosam,
-            vitae tempore aspernatur consequatur iure nobis.
-            Fugiat praesentium est eveniet neque architecto enim ab molestias?
+            {{ $text ?? 'Empty email message!' }}
         </div>
     </x-proton::row>
 
