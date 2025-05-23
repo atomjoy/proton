@@ -26,7 +26,7 @@ use Proton\Mail\PasswordMail;
 use Proton\Mail\F2aMail;
 
 // Nano emails
-use Proton\Mail\Nano\DefaultMail as NanoDefaultMail;
+use Proton\Mail\Nano\FullMail as NanoFullMail;
 
 Route::get('/proton', function () {
   // User (required columns: id, name, code)
@@ -35,6 +35,16 @@ Route::get('/proton', function () {
   $user = User::factory(1)->make([
     'email' => 'user@laravel.com'
   ])->first();
+
+  // Nano dample
+  Mail::to('user@laravel.com')->send(
+    new NanoFullMail(
+        $user,
+        'Lo9em3 ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur ipsum natus quidem? Facere voluptates ratione impedit sequi soluta laboriosam error quisquam.',
+        'https://example.com',
+        '123654'
+    )
+  );
 
   // Send email sample
   Mail::to('user@laravel.com')->send(new DefaultMail());
