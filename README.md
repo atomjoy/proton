@@ -6,7 +6,7 @@ Html email blade components for Laravel. Html email footer signature example. Pr
 
 ```sh
 # Create laravel project
-composer create-project laravel/laravel:^11.0 email-app
+composer create-project laravel/laravel:^12.0 email-app
 # Or
 composer create-project laravel/laravel email-app
 cd email-app
@@ -35,6 +35,21 @@ Route::get('/proton', function () {
   $user = User::factory(1)->make([
     'email' => 'user@laravel.com'
   ])->first();
+
+  $products = [
+      [
+          'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/laptop.jpg',
+          'name' => 'Laptop MSI GeForce',
+          'text' => 'Get a laptop 30% off',
+          'button' => 'Buy Now',
+      ],
+      [
+          'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/tablet.jpg',
+          'name' => 'Tablet Canyon WS-305',
+          'text' => 'Get a ltablet 30% off',
+          'button' => 'Buy Now',
+      ],
+  ];
 
   // Nano email
   Mail::to('user@laravel.com')->send(
