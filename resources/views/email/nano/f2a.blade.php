@@ -3,7 +3,7 @@
         <style></style>
     </x-slot:style>
 
-    <x-proton::nano.header />
+    <x-proton::nano.header_f2a />
 
     <x-proton::row class="nano-padding-inline">
         <div class="nano-title">@lang('proton.f2a.welcome') {{ $user?->name ?? '' }}!</div>
