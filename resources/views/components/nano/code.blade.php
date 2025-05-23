@@ -2,7 +2,7 @@
 $password = (string) $password ?? '000000';
 @endphp
 
-<x-proton::row>
+<x-proton::nano.row>
     <div class="nano-padding-inline">
         <div class="nano-code">
             <ul>{{ $password[0] ?? 0 }}</ul>
@@ -13,4 +13,4 @@ $password = (string) $password ?? '000000';
             <ul>{{ $password[5] ?? 0 }}</ul>
         </div>
     </div>
-</x-proton::row>
+</x-proton::nano.row>

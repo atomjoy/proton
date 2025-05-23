@@ -159,10 +159,16 @@
         .nano-regards {
             float: left;
             width: 100%;
+            height: auto;
             overflow: hidden;
             font-size: 20px;
             font-weight: 600;
             color: #3c4043;
+        }
+
+        .nano-regards-text {
+            font-size: 18px;
+            font-weight: 700;
         }
 
         .nano-regards-name {
@@ -177,8 +183,8 @@
 
         .nano-bg {
             font-size: 14px;
-            color: #3c4043;
-            background: #fafafa;
+            color: #3c4043 !important;
+            background: #fafafa !important;
         }
 
         .nano-bg a {
@@ -191,7 +197,7 @@
         }
 
         .nano-border {
-            border: 1px solid #f0f0f0
+            border: 1px solid #f0f0f0 !important;
         }
 
         .nano-font-small {
@@ -218,17 +224,6 @@
 
         .nano-padding-bottom {
             padding-bottom: 25px;
-        }
-
-        .nano-regards {
-            float: left;
-            width: 100%;
-            height: auto;
-        }
-
-        .nano-regards-text {
-            font-size: 18px;
-            font-weight: 700;
         }
 
         .nano-code {
@@ -261,9 +256,53 @@
             font-size: 21px;
         }
 
+        .nano-company-logo {
+            border-radius: 0px !important;
+        }
+
+        .nano-50 {
+            position: relative;
+            float: left;
+            width: 50%;
+            padding: 25px;
+            padding-top: 0px;
+            box-sizing: border-box !important;
+        }
+
+        .nano-50 img {
+            margin-top: 0px;
+        }
+
+        .nano-50 a.nano-buy {
+            float: left;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 1px solid #3c4043;
+            color: #3c4043;
+        }
+
+        .nano-50 a.nano-buy:hover {
+            color: #0075ff;
+            border: 1px solid #0075ff;
+        }
+
         @media screen and (max-width: 640px) {
-            .nano-half {
+            .nano-50 {
                 width: 100%;
+            }
+
+            .nano-title {
+                font-size: 25px;
+            }
+
+            .nano-title-small {
+                font-size: 18px;
             }
         }
     </style>

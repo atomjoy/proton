@@ -1,4 +1,4 @@
-<x-proton::row>
+<x-proton::nano.row>
     <div class="nano-padding-inline">
         <div class="nano-divider"></div>
 
@@ -52,4 +52,4 @@
             @endif
         </center>
     </div>
-</x-proton::row>
+</x-proton::nano.row>
