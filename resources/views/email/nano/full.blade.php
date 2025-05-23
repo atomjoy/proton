@@ -23,9 +23,13 @@
     </x-proton::nano.button>
     @endif
 
-    <x-proton::nano.code password="{{ $password }}" />
+    @if (!empty($code))
+    <x-proton::nano.code password="{{ $code }}" />
+    @endif
 
+    @if (!empty($password))
     <x-proton::nano.password password="{{ $password }}" />
+    @endif
 
     <x-proton::nano.regards />
 
