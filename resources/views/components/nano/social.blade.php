@@ -1,5 +1,7 @@
 <x-proton::row>
     <div class="nano-padding-inline">
+        <div class="nano-divider"></div>
+
         <center>
             @if (!empty(config('proton.social.facebook')))
             <a href="{{ request()->getSchemeAndHttpHost() . '/social/facebook' }}" class="nano-icon" target="_blank">

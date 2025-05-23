@@ -122,7 +122,7 @@
             float: left;
             width: 100%;
             overflow: hidden;
-            margin: 20px 0px;
+            margin: 25px 0px;
             border-top: 1px solid #f0f0f0;
         }
 
@@ -140,6 +140,7 @@
             float: left;
             width: 100%;
             overflow: hidden;
+            margin-bottom: 20px;
             font-size: 20px;
             font-weight: 600;
             color: #3c4043;
@@ -150,6 +151,25 @@
             width: 100%;
             overflow: hidden;
             margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #5f6368;
+        }
+
+        .nano-regards {
+            float: left;
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            font-weight: 600;
+            color: #3c4043;
+        }
+
+        .nano-regards-name {
+            float: left;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 25px;
             font-size: 16px;
             font-weight: normal;
             color: #5f6368;
