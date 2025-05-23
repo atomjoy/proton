@@ -18,10 +18,15 @@ composer require atomjoy/proton
 ```php
 <?php
 use App\Models\User;
+
+// Proton emails
 use Proton\Mail\DefaultMail;
 use Proton\Mail\RegisterMail;
 use Proton\Mail\PasswordMail;
 use Proton\Mail\F2aMail;
+
+// Nano emails
+use Proton\Mail\Nano\DefaultMail as NanoDefaultMail;
 
 Route::get('/proton', function () {
   // User (required columns: id, name, code)
@@ -46,13 +51,21 @@ Route::get('/proton', function () {
   Mail::to('user@laravel.com')->send(new F2aMail($user, 888777));
   Mail::to('user@laravel.com')->locale('pl')->send(new F2aMail($user, 888777));
 
+  // Show example email view (nano)
+  return view('proton::email.nano.register', ['user' => $user]);
+  // return view('proton::email.nano.password', 'password' => 888777);
+  // return view('proton::email.nano.f2a', ['user' => $user, 'password' => 888777]);
+  // return view('proton::email.nano.default', ['user' => $user, 'message' => 'Message text here ...', 'url' => 'https://example.com']);
+  // return view('proton::email.nano.full', ['user' => $user, 'message' => 'Message text here ...', 'url' => 'https://example.com', 'password' => 888777]);
+
   // Show example email view
-  return view('proton::email.newsletter');
+  // return view('proton::email.newsletter');
   // return view('proton::email.default');
   // return view('proton::email.password');
   // return view('proton::email.register');
-  // return view('proton::email.signature');
   // return view('proton::email.f2a', ['user' => $user, 'password' => 888777]);
+
+  // return view('proton::email.signature');
 });
 ```
 
