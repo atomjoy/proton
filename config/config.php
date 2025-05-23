@@ -9,4 +9,14 @@ return [
     'footer_company' => '© 2025 Proton AG',
     'footer_street' => 'Route de la Galaise 32',
     'footer_city' => '1228 Plan-les-Ouates, Geneva',
+    'social' => [
+        'facebook' => true,
+        'youtube' => true,
+        'x' => true,
+        'linkedin' => true,
+        'instagram' => true,
+        'behance' => true,
+        'dribbble' => true,
+        'pinterest' => true,
+    ],
 ];
