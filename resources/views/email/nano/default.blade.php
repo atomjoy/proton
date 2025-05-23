@@ -6,10 +6,10 @@
 
     <x-proton::nano.header />
 
-    <x-proton::row class="nano-padding-inline">
+    <x-proton::nano.row class="nano-padding-inline">
         <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
         <div class="nano-p">{{ $text ?? 'Empty message.' }}</div>
-    </x-proton::row>
+    </x-proton::nano.row>
 
     @if (!empty($url))
     <x-proton::nano.button url="{{ $url }}">
