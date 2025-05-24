@@ -20,6 +20,7 @@
             display: block;
             margin: 0px;
             padding: 0px;
+            display: block;
             box-sizing: border-box;
         }
 
@@ -50,6 +51,10 @@
         .nano-table tr,
         .nano-table td,
         .nano-table th {
+            float: left;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
             border: 0px;
             border-spacing: 0;
             border-collapse: collapse;
@@ -85,11 +90,13 @@
         }
 
         .nano-table img {
-            display: block;
+            display: inline-block;
+            width: 100%;
             max-width: 100%;
             margin-bottom: 25px;
-            border-radius: 10px;
             border: 0px;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .nano-table a.nano-button {
@@ -116,6 +123,27 @@
             padding: 5px;
         }
 
+        .nano-table a.nano-buy-button {
+            float: left;
+            width: 100%;
+            margin-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
+            border-radius: 6px;
+            border: 1px solid #3c4043;
+            color: #3c4043;
+        }
+
+        .nano-table a.nano-buy-button:hover {
+            color: #0075ff;
+            border: 1px solid #0075ff;
+        }
+
         /* Overvrite style */
 
         .nano-divider {
@@ -127,58 +155,58 @@
         }
 
         .nano-title {
-            float: left;
-            width: 100%;
+            display: block;
             overflow: hidden;
-            margin-bottom: 20px;
+            color: #3c4043;
             font-size: 30px;
             font-weight: 600;
-            color: #3c4043;
+            margin-bottom: 20px;
         }
 
         .nano-title-small {
-            float: left;
-            width: 100%;
+            display: block;
             overflow: hidden;
-            margin-bottom: 20px;
+            color: #3c4043;
             font-size: 20px;
             font-weight: 600;
-            color: #3c4043;
+            margin-bottom: 20px;
         }
 
         .nano-p {
-            float: left;
-            width: 100%;
+            display: block;
             overflow: hidden;
-            margin-bottom: 20px;
+            width: 100%;
+            color: #5f6368;
             font-size: 16px;
             font-weight: normal;
-            color: #5f6368;
+            margin-bottom: 20px;
         }
 
         .nano-regards {
-            float: left;
-            width: 100%;
-            height: auto;
+            display: block;
             overflow: hidden;
+            width: 100%;
+            color: #3c4043;
             font-size: 20px;
             font-weight: 600;
-            color: #3c4043;
         }
 
         .nano-regards-text {
+            display: block;
+            overflow: hidden;
+            width: 100%;
             font-size: 18px;
             font-weight: 700;
         }
 
         .nano-regards-name {
-            float: left;
-            width: 100%;
+            display: block;
             overflow: hidden;
-            margin-bottom: 25px;
+            width: 100%;
+            color: #5f6368;
             font-size: 16px;
             font-weight: normal;
-            color: #5f6368;
+            margin-bottom: 25px;
         }
 
         .nano-bg {
@@ -197,7 +225,7 @@
         }
 
         .nano-border {
-            border: 1px solid #f0f0f0 !important;
+            border: 1px solid #f0f0f0;
         }
 
         .nano-font-small {
@@ -206,47 +234,49 @@
         }
 
         .nano-padding {
-            float: left;
-            width: 100%;
-            height: auto;
-            padding: 25px;
-            box-sizing: border-box;
+            display: block;
             overflow: hidden;
+            padding: 25px !important;
         }
 
         .nano-padding-inline {
-            padding: 0px 25px;
+            display: block;
+            overflow: hidden;
+            padding: 0px 25px !important;
         }
 
         .nano-padding-top {
-            padding-top: 25px;
+            display: block;
+            overflow: hidden;
+            padding-top: 25px !important;
         }
 
         .nano-padding-bottom {
-            padding-bottom: 25px;
+            display: block;
+            overflow: hidden;
+            padding-bottom: 25px !important;
         }
 
         .nano-code {
-            float: left;
-            width: 100%;
+            display: block;
             overflow: hidden;
+            width: 100%;
             margin: 20px 0px;
-            padding: 15px;
-            box-sizing: border-box;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
             border-radius: 6px;
-            border: 1px dashed #0075ffaa;
-            background: #0075ff11;
+            border: 1px dashed #0075ff;
+            background: #eef6ff;
             color: #0075ff;
-            font-weight: 700;
             font-size: 23px;
+            font-weight: 700;
             text-align: center;
         }
 
         .nano-code ul {
             display: inline-block;
-            margin: 5px 5px;
             padding: 10px 20px;
-            box-sizing: border-box;
+            margin: 5px 5px;
             min-width: 30px;
             border-radius: 6px;
             border: 1px dashed #0075ffaa;
@@ -254,47 +284,70 @@
             color: #3c4043;
             font-weight: 700;
             font-size: 21px;
+            box-sizing: border-box;
         }
 
         .nano-company-logo {
+            float: left;
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .nano-company-logo img {
+            width: auto !important;
+            max-width: 200px !important;
             border-radius: 0px !important;
         }
 
         .nano-50 {
             position: relative;
             float: left;
-            width: 50%;
-            padding: 25px;
-            padding-top: 0px;
-            box-sizing: border-box !important;
+            width: 48%;
+            padding: 0px;
+            padding-bottom: 25px;
         }
 
         .nano-50 img {
+            width: 100%;
             margin-top: 0px;
         }
 
-        .nano-50 a.nano-buy {
-            float: left;
-            width: 100%;
-            margin-top: 20px;
-            padding: 10px;
-            font-size: 14px;
+        .nano-product-left {
+            padding-right: 2%;
+        }
+
+        .nano-product-right {
+            padding-left: 2%;
+        }
+
+        .nano-product-name {
+            font-size: 18px;
             font-weight: 700;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 6px;
-            border: 1px solid #3c4043;
             color: #3c4043;
         }
 
-        .nano-50 a.nano-buy:hover {
-            color: #0075ff;
-            border: 1px solid #0075ff;
+        .nano-product-text {
+            color: #5f6368;
+        }
+
+        .nano-product-price {
+            font-size: 20px;
+            font-weight: 400;
+            color: #3c4043;
         }
 
         @media screen and (max-width: 640px) {
             .nano-50 {
                 width: 100%;
+            }
+
+            .nano-product-left {
+                padding-right: 0px;
+            }
+
+            .nano-product-right {
+                padding-left: 0px;
             }
 
             .nano-title {

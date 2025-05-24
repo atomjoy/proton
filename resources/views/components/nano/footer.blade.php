@@ -1,8 +1,9 @@
 <x-proton::nano.row>
     <div class="nano-padding nano-bg nano-font-small">
         <div class="nano-company">
-            <img class="nano-company-logo" src="{{ config('proton.footer_image_url', 'https://raw.githubusercontent.com/atomjoy/proton/main/public/logo-proton-grey.png') }}" alt="Logo">
-
+            <div class="nano-company-logo">
+                <img class="nano-company-logo" src="{{ config('proton.footer_image_url', 'https://raw.githubusercontent.com/atomjoy/proton/main/public/logo-proton-grey.png') }}" alt="Logo">
+            </div>
             <div class="nano-address">
                 <div class="nano-address-line">{{ config('proton.footer_company', '© 2025 Proton AG') }}</div>
                 <div class="nano-address-line">{{ config('proton.footer_street', 'Route de la Galaise 32') }}</div>

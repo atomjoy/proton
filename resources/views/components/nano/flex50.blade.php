@@ -1,3 +1,3 @@
-<div class="nano-50">
+<div class="nano-50 {{ $class ?? '' }}">
     {{ $slot ?? ''}}
 </div>
