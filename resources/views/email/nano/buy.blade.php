@@ -21,6 +21,8 @@
 
     <x-proton::nano.products :products="$products" />
 
+    <x-proton::nano.products_flex :products="$products_flex" />
+
     <x-proton::nano.regards />
 
     <x-proton::nano.social />
