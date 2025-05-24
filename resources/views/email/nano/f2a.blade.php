@@ -5,9 +5,13 @@
 
     <x-proton::nano.header_f2a />
 
-    <x-proton::nano.row class="nano-padding-inline">
-        <div class="nano-title">@lang('proton.f2a.welcome') {{ $user?->name ?? '' }}!</div>
-        <div class="nano-p">@lang('proton.f2a.message')</div>
+    <x-proton::nano.row>
+        <div class="nano-padding-inline">
+            <div class="nano-title">@lang('proton.f2a.welcome') {{ $user?->name ?? '' }}!</div>
+            <div class="nano-p">
+                @lang('proton.f2a.message')
+            </div>
+        </div>
     </x-proton::nano.row>
 
     <x-proton::nano.code password="{{ $password }}" />

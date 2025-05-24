@@ -5,9 +5,13 @@
 
     <x-proton::nano.header_register />
 
-    <x-proton::nano.row class="nano-padding-inline">
-        <div class="nano-title">@lang('proton.register.welcome') {{ $user?->name ?? '' }}!</div>
-        <div class="nano-p">@lang('proton.register.message')</div>
+    <x-proton::nano.row>
+        <div class="nano-padding-inline">
+            <div class="nano-title">@lang('proton.register.welcome') {{ $user?->name ?? '' }}!</div>
+            <div class="nano-p">
+                @lang('proton.register.message')
+            </div>
+        </div>
     </x-proton::nano.row>
 
     <x-proton::nano.button url="{{ request()->getSchemeAndHttpHost() }}/activate/{{ $user?->id ?? '0' }}/{{ $user?->code ?? 'nocode' }}?locale={{ app()->getLocale() }}">

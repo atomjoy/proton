@@ -10,10 +10,12 @@
 
     <x-proton::nano.header />
 
-    <x-proton::nano.row class="nano-padding-inline">
-        <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
-        <div class="nano-p">
-            {{ $text ?? 'Empty message.' }}
+    <x-proton::nano.row>
+        <div class="nano-padding-inline">
+            <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
+            <div class="nano-p">
+                {{ $text ?? 'Empty message.' }}
+            </div>
         </div>
     </x-proton::nano.row>
 

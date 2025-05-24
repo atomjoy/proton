@@ -10,10 +10,12 @@
 
     <x-proton::nano.header_buy />
 
-    <x-proton::nano.row class="nano-padding-inline">
-        <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
-        <div class="nano-p">
-            {{ $text ?? 'Latest promotions in our shop.' }}
+    <x-proton::nano.row>
+        <div class="nano-padding-inline">
+            <div class="nano-title">@lang('Welcome') {{ $user?->name ?? '' }}!</div>
+            <div class="nano-p">
+                {{ $text ?? 'Latest promotions in our shop.' }}
+            </div>
         </div>
     </x-proton::nano.row>
 

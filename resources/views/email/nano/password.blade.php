@@ -5,9 +5,13 @@
 
     <x-proton::nano.header_password />
 
-    <x-proton::nano.row class="nano-padding-inline">
-        <div class="nano-title">@lang('proton.password.welcome') {{ $user?->name ?? '' }}!</div>
-        <div class="nano-p">@lang('proton.password.message')</div>
+    <x-proton::nano.row>
+        <div class="nano-padding-inline">
+            <div class="nano-title">@lang('proton.password.welcome') {{ $user?->name ?? '' }}!</div>
+            <div class="nano-p">
+                @lang('proton.password.message')
+            </div>
+        </div>
     </x-proton::nano.row>
 
     <x-proton::nano.password password="{{ $password }}" />
