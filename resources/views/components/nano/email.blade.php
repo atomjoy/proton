@@ -125,7 +125,7 @@
 
         .nano-table a.nano-buy-button {
             float: left;
-            width: 100%;
+            width: 99%;
             margin-top: 20px;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -322,6 +322,19 @@
             padding-left: 2%;
         }
 
+        .nano-product-left-mini {
+            padding-right: 2%;
+        }
+
+        .nano-product-right-mini {
+            padding-left: 2%;
+        }
+
+        .nano-product-center-mini {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
         .nano-product-name {
             font-size: 18px;
             font-weight: 700;
@@ -338,9 +351,67 @@
             color: #3c4043;
         }
 
+        .nano-products-flex {
+            display: block;
+            overflow: hidden;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        .nano-product {
+            float: left;
+            width: 31.333%;
+            margin-bottom: 25px;
+            box-sizing: content-box !important;
+        }
+
+        .nano-product-divider {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 25px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nano-products-flex {
+                display: block !important;
+            }
+
+            .nano-product {
+                width: 48%;
+                padding: 0px;
+            }
+
+            .nano-product-left-mini {
+                padding-right: 1%;
+                padding-left: 1%;
+            }
+
+            .nano-product-right-mini {
+                padding-right: 1%;
+                padding-left: 1%;
+            }
+
+            .nano-product-center-mini {
+                padding-right: 1%;
+                padding-left: 1%;
+            }
+
+            .nano-product-divider {
+                border: 0px;
+            }
+        }
+
         @media screen and (max-width: 640px) {
             .nano-50 {
                 width: 100%;
+            }
+
+            .nano-products-flex {
+                display: block !important;
+            }
+
+            .nano-product {
+                width: 100%;
+                padding: 0px;
             }
 
             .nano-product-left {
@@ -349,6 +420,11 @@
 
             .nano-product-right {
                 padding-left: 0px;
+            }
+
+            .nano-product-center-mini {
+                padding-left: 0px;
+                padding-right: 0px;
             }
 
             .nano-title {
