@@ -150,7 +150,7 @@ php artisan make:mail PromoMail
 ### Proton nano email
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/proton-nano.png" width="100%">
-<img src="https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/proton-buy.png" width="100%">
+<img src="https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/proton-buy-promotions.png" width="100%">
 
 ### Newsletter email
 
