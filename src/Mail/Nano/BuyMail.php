@@ -14,12 +14,14 @@ class BuyMail extends Mailable
     public $user = null;
     public $text = null;
     public $products = null;
+    public $products_flex = null;
 
-    public function __construct(?User $user, $text, $products = [])
+    public function __construct(?User $user, $text, $products = [], $products_flex = [])
     {
         $this->user = $user;
         $this->text = $text;
         $this->products = $products;
+        $this->products_flex = $products_flex;
     }
 
     public function build()
