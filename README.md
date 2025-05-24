@@ -37,44 +37,57 @@ Route::get('/proton', function () {
     'email' => 'user@laravel.com'
   ])->first();
 
-  $products = [
-    [
-        'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/laptop.jpg',
-        'name' => 'Laptop MSI GeForce',
-        'text' => 'Get a laptop 30% off',
-        'button' => 'Buy Now',
-        'url' => 'https://example.com/laptop',
-        'price' => '3299',
-        'currency' => 'USD',
-    ],
-    [
-        'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/tablet.jpg',
-        'name' => 'Tablet Canyon WS-305',
-        'text' => 'Get a ltablet 30% off',
-        'button' => 'Buy Now',
-        'url' => 'https://example.com/tablet',
-        'price' => '2299',
-        'currency' => 'USD',
-    ],
+  $pr1 = [
+      'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/laptop.jpg',
+      'name' => 'Laptop MSI GeForce',
+      'text' => 'Get a laptop 30% off',
+      'button' => 'Buy Now',
+      'url' => 'https://example.com/laptop',
+      'price' => '3299',
+      'currency' => 'USD',
   ];
 
-  $params_buy = [
-  'user' => $user,
-  'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',
-  'products' => $products,
- ];
+  $pr2 = [
+    'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/tablet.jpg',
+    'name' => 'Tablet Canyon Z9',
+    'text' => 'Get a ltablet 30% off',
+    'button' => 'Buy Now',
+    'url' => 'https://example.com/tablet',
+    'price' => '2299',
+    'currency' => 'USD',
+  ];
+
+  $pr3 = [
+    'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/mobile.jpg',
+    'name' => 'Samsung X25',
+    'text' => 'Get a mobile 30% off',
+    'button' => 'Buy Now',
+    'url' => 'https://example.com/mobile',
+    'price' => '1299',
+    'currency' => 'USD',
+  ];
+
+  $products = [$pr1, $pr2,];
+  $products_flex = [$pr1, $pr2, $pr3, $pr1, $pr2, $pr3];
+
+  $params = [
+    'user' => $user,
+    'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit, adipisci minus ad possimus fugiat alias eos accusantium animi. Eos, dolor eaque?',
+    'products' => $products,
+    'products_flex' => $products_flex,
+  ];
 
   $params_full = [
-  'user' => $user,
-  'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',
-  'url' => 'https://url.example.com',
-  'password' => 'Xyz123Wo65',
-  'code' => '690470',
- ];
+    'user' => $user,
+    'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit, adipisci minus ad possimus fugiat alias eos accusantium animi. Eos, dolor eaque?',
+    'url' => 'https://url.example.com',
+    'password' => 'Xyz123Wo65',
+    'code' => '690470',
+  ];
 
   // Nano email
+  Mail::to('user@laravel.com')->send(new NanoBuyMail(...$params));
   Mail::to('user@laravel.com')->send(new NanoFullMail(...$params_full));
-  Mail::to('user@laravel.com')->send(new NanoBuyMail(...$params_buy));
 
   // Send email sample
   Mail::to('user@laravel.com')->send(new DefaultMail());
