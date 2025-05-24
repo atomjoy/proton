@@ -36,14 +36,14 @@
             color: #707070;
         }
 
-        .nano-table {
+        table.nano-table {
             font-size: 16px;
             border-collapse: collapse;
             border-spacing: 0;
             border: 0px;
             width: 640px;
             max-width: 90%;
-            margin: 50px auto;
+            margin: 50px auto !important;
             border-radius: 5px;
             overflow: hidden;
         }
