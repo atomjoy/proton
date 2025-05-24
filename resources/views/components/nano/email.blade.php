@@ -306,6 +306,7 @@
             width: 48%;
             padding: 0px;
             padding-bottom: 25px;
+            box-sizing: content-box !important;
         }
 
         .nano-50 img {
