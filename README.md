@@ -38,33 +38,39 @@ Route::get('/proton', function () {
   ])->first();
 
   $products = [
-      [
-          'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/laptop.jpg',
-          'name' => 'Laptop MSI GeForce',
-          'text' => 'Get a laptop 30% off',
-          'button' => 'Buy Now',
-      ],
-      [
-          'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/tablet.jpg',
-          'name' => 'Tablet Canyon WS-305',
-          'text' => 'Get a ltablet 30% off',
-          'button' => 'Buy Now',
-      ],
+    [
+        'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/laptop.jpg',
+        'name' => 'Laptop MSI GeForce',
+        'text' => 'Get a laptop 30% off',
+        'button' => 'Buy Now',
+        'url' => 'https://example.com/laptop',
+        'price' => '3299',
+        'currency' => 'USD',
+    ],
+    [
+        'image' => 'https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/public/images/tablet.jpg',
+        'name' => 'Tablet Canyon WS-305',
+        'text' => 'Get a ltablet 30% off',
+        'button' => 'Buy Now',
+        'url' => 'https://example.com/tablet',
+        'price' => '2299',
+        'currency' => 'USD',
+    ],
   ];
 
   $params_buy = [
-		'user' => $user,
-		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',
-		'products' => $products,
-	];
+  'user' => $user,
+  'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',
+  'products' => $products,
+ ];
 
   $params_full = [
-		'user' => $user,
-		'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',		
-		'url' => 'https://url.example.com',
-		'password' => 'Xyz123Wo65',
-		'code' => '690470',
-	];
+  'user' => $user,
+  'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit.',
+  'url' => 'https://url.example.com',
+  'password' => 'Xyz123Wo65',
+  'code' => '690470',
+ ];
 
   // Nano email
   Mail::to('user@laravel.com')->send(new NanoFullMail(...$params_full));
@@ -131,6 +137,7 @@ php artisan make:mail PromoMail
 ### Proton nano email
 
 <img src="https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/proton-nano.png" width="100%">
+<img src="https://raw.githubusercontent.com/atomjoy/proton/refs/heads/main/proton-buy.png" width="100%">
 
 ### Newsletter email
 
