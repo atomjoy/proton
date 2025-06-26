@@ -135,9 +135,10 @@
 
 		.proton-table img,
 		.proton-table a img {
-			display: block;
+			display: inline-block;
+			width: auto;
 			max-width: 100%;
-			margin-bottom: 20px;
+			margin-bottom: 0px;
 			border: 0px;
 			border-radius: 10px;
 			overflow: hidden;
