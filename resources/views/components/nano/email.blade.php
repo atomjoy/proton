@@ -91,9 +91,9 @@
 
         .nano-table img {
             display: inline-block;
-            width: 100%;
+            width: auto;
             max-width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 0px;
             border: 0px;
             border-radius: 10px;
             overflow: hidden;
