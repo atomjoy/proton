@@ -144,7 +144,7 @@
 			overflow: hidden;
 		}
 
-		.nano-table img.nano-image-mb {
+		.proton-table img.proton-image-mb {
 			margin-bottom: 20px;
 		}
 
