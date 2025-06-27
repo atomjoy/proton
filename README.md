@@ -13,6 +13,13 @@ cd email-app
 composer require atomjoy/proton
 ```
 
+## Clear cache
+
+```sh
+# After composer update
+php artisan view:clear
+```
+
 ### Send email example
 
 ```php
@@ -72,14 +79,14 @@ Route::get('/proton', function () {
 
   $params = [
     'user' => $user,
-    'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit, adipisci minus ad possimus fugiat alias eos accusantium animi. Eos, dolor eaque?',
+    'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit, adipisci minus ad possimus.',
     'products' => $products,
     'products_flex' => $products_flex,
   ];
 
   $params_full = [
     'user' => $user,
-    'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit, adipisci minus ad possimus fugiat alias eos accusantium animi. Eos, dolor eaque?',
+    'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque fuga vel similique error, necessitatibus a sequi odit, adipisci minus ad possimus.',
     'url' => 'https://url.example.com',
     'password' => 'Xyz123Wo65',
     'code' => '690470',
