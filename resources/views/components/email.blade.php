@@ -144,6 +144,10 @@
 			overflow: hidden;
 		}
 
+		.nano-table img.nano-image-mb {
+			margin-bottom: 20px;
+		}
+
 		.proton-table a.proton-button {
 			display: inline-block;
 			font-weight: bold;
