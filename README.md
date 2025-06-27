@@ -92,6 +92,9 @@ Route::get('/proton', function () {
     'code' => '690470',
   ];
 
+  // Image margin bottom class
+  // .nano-image-mb
+
   // Nano email
   Mail::to('user@laravel.com')->send(new NanoBuyMail(...$params));
   Mail::to('user@laravel.com')->send(new NanoFullMail(...$params_full));
