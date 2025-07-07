@@ -201,12 +201,15 @@
 		}
 
 		.proton-social-link {
+			display: inline-block;
+			width: 45px;
+			height: 45px;
 			background: #d8d8e4;
 			border-radius: 59%;
 		}
 
 		.proton-social-link img {
-			margin: 10px !important;
+			margin: 5px !important;
 		}
 
 		.proton-rights {
